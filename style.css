@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+body,html,h1{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+header{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+#header_2{
+  width: 100%;
+  height: 300px;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.bandeau_haut{ /* Fond du bandeau en haut */
+  background-color: #262626;
+  width: 100%;
+}
+.texte_bandeau_haut{
+  margin-top: 0px;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 0px;
+  padding: 08px 0px;
+}
+.bandeau_bas{ /* Fond du bandeau en haut */
+  background-color: #262626;
+}
+.texte_bandeau_bas{
+  margin-top: 0px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 0px;
+  padding: 08px 0px;
+}
+.logo_bas_de_page{
+  height: 50px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+/* Menu normal*/
+.bandeau_menu{
+  position: sticky;
+  top: 0;
+  z-index: 8000;
+}
+nav{
+  width: 100%;
+  background-color: rgb(4,138,205,0.89);
+  margin-top: 0px;
+  float: left;
+}
+.l-menu{
+  text-align: center;
+}
+.l-menu a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+  padding: 17px 20px;
+}
+.l-menu a:hover{
+  color: white;
+  border-bottom: 2px solid white;
+  background-color: #004070;
+  transition: color 0.3s, background-color 0.3s;
+}
+.logo_iut_menu{
+  height: 45px;
+  width: 38px;
+  margin-bottom: -10px;
+  margin-top: -15px;
+}
+/* FIN Menu */
+
+/* Menu telephone */
+label, #toggle
+{
+    display: none;
+}
+@media all and (max-width: 800px)
+{
+    nav
+    {
+      height: 80px;
+    }
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(4,138,205,0.89);
+        height: 100%;
+        margin-left: -40px;
+    }
+    nav .main_pages a {
+        width: 100%;
+    }
+    label 
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+}
+/* FIN Menu telephone */
+
+header{
+  background: url("./pictures/nice_2.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: local;
+}
+.home_screen{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  color: white;
+  align-items:center;
+  display: flex;
+  justify-content: center;
+}
+.home_screen p{
+  text-align: center;
+  margin-top: -20px;
+  line-height: 0.9;
+  text-shadow: 1px 1px 10px black;
+  font-weight: bold;
+  padding: 17px 60px;
+  font-size: 40px;
+  font-style: normal;
+}
+main{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+main p{
+  color: black;
+}
+main h2{
+  text-align: center;
+  text-decoration: underline;
+}
+#iframe_carte{
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
